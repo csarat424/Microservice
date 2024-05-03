@@ -8,7 +8,7 @@ pipeline {
                     dir('src') {
 
                     withDockerRegistry(credentialsId: 'docker-cred', toolName: 'docker') {
-                        sh "docker build -t csarat424/cartservice:latest ."
+                        sh "docker build -t csarat424/cartservice:latest ." 
                     }
                         }
                 }
